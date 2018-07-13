@@ -34,7 +34,8 @@ public class MainActivity extends Activity {
         String[] proj = { MediaStore.Audio.Media._ID,
                 MediaStore.Audio.Media.DATA,
                 MediaStore.Audio.Media.DISPLAY_NAME,
-                MediaStore.Video.Media.SIZE };
+                MediaStore.Video.Media.SIZE ,
+                MediaStore.Audio.Media.ALBUM};
         musiccursor = managedQuery(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI,
                 proj, null, null, null);
         count = musiccursor.getCount();
